@@ -1,2 +1,6 @@
 # Project3_MiningChromeRepository
-Computer Project 2
+Course: Computer Project II
+Developed by Group #12
+Authors: Elif Aklan
+         R. Nur Tarlakazan
+         Gizem Esra Ünlü
