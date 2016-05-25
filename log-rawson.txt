@@ -1,0 +1,102 @@
+deb6a40 ,peter1000,  Mon Oct 19 18:44:30 2015 -0200 , Fixes typo
+M	README
+9c61b01 ,Nicolas Despres,  Thu Sep 24 20:02:43 2015 +0200 , Fix typo.
+M	src/build_log.h
+fdb885d ,Nico Weber,  Mon Sep 7 14:26:19 2015 -0700 , Merge LLVM r242069, make spell checking allocate less memory.
+M	src/edit_distance.cc
+41d2b03 ,Fredrik Medley,  Thu Sep 3 22:19:25 2015 +0200 , Optimize StringPiece hash map
+M	src/hash_map.h
+3f5b682 ,Fredrik Medley,  Thu Sep 3 21:45:42 2015 +0200 , Describe why to use relative paths
+M	doc/manual.asciidoc
+b8f4ad1 ,Scott Graham,  Wed Aug 26 19:51:15 2015 -0700 , Don't output null.o during configure
+M	configure.py
+956b4f1 ,Scott Graham,  Sun Aug 9 21:27:39 2015 -0700 , Remove accidental changes
+M	src/depfile_parser.cc
+M	src/lexer.cc
+a626508 ,Scott Graham,  Sun Aug 9 21:25:09 2015 -0700 , Some mucking with std:: for set_terminate and terminate_handler
+M	src/depfile_parser.cc
+M	src/graphviz.h
+M	src/lexer.cc
+M	src/ninja.cc
+a4327b9 ,Scott Graham,  Sun Aug 9 21:02:23 2015 -0700 , Set _HAS_EXCEPTIONS=0 on MSVC
+M	configure.py
+de1dd6e ,Lindley French,  Thu Jul 30 17:33:11 2015 -0700 , Make sure not to re-define __STDC_FORMAT_MACROS.
+M	src/build_log.cc
+4ada4e7 ,Mike Seplowitz,  Thu Jul 30 11:51:06 2015 -0400 , Correct order of ASSERT_EQ arguments
+M	src/depfile_parser_test.cc
+f30508e ,Nico Weber,  Fri Jul 10 12:15:00 2015 -0700 , win: print right slashes in 'unknown target' message
+M	src/graph.cc
+M	src/graph.h
+M	src/ninja.cc
+c81c127 ,Nico Weber,  Wed Jul 1 17:52:16 2015 -0700 , fix typos, punctuation, redundant words in HACKING.md
+M	HACKING.md
+53e5aed ,Evan Martin ,  Tue Jun 30 15:29:15 2015 -0700 , point people at more detailed build docs if they're on Windows
+M	HACKING.md
+M	README
+d18eda4 ,Nico Weber,  Mon Jun 29 10:16:35 2015 -0700 , mark this 1.6.0.git
+M	src/version.cc
+5d4473d ,Jason Haslam,  Mon Jun 22 16:28:04 2015 -0600 , Fix bootstrap from a source path containing spaces.
+M	configure.py
+d3441a0 ,Jason Haslam,  Mon Jun 22 15:35:32 2015 -0600 , Search for generated headers relative to build dir.
+M	configure.py
+M	src/browse.cc
+1beea93 ,Jason Haslam,  Mon Jun 22 15:35:32 2015 -0600 , Allow configure script to bootstrap out of source.
+M	configure.py
+4256ff4 ,Nico Weber,  Mon Jun 22 13:35:37 2015 -0700 , Revert "Bootstrap out of source"
+M	configure.py
+M	src/browse.cc
+ade82bd ,Nico Weber,  Thu Jun 18 17:28:20 2015 -0700 , Document the change from #921 in the manual.
+M	doc/manual.asciidoc
+312c6aa ,Scott Graham,  Thu Jun 18 15:52:25 2015 -0700 , don't alias input/output in ExtractDeps (i.e. actually works now)
+M	src/build.cc
+M	src/msvc_helper-win32.cc
+M	src/msvc_helper.h
+fd4b140 ,Scott Graham,  Thu Jun 18 15:41:47 2015 -0700 , propagate include normalization failure to caller instead
+M	src/build.cc
+M	src/msvc_helper-win32.cc
+M	src/msvc_helper.h
+M	src/msvc_helper_main-win32.cc
+M	src/msvc_helper_test.cc
+38aba9d ,Scott Graham,  Thu Jun 18 15:06:42 2015 -0700 , Error+exit -> Fatal
+M	src/msvc_helper-win32.cc
+27b82ff ,Brad King,  Tue Jun 16 13:38:55 2015 -0400 , Add missing member initializer in Edge constructor
+M	src/graph.h
+32774e9 ,Scott Graham,  Tue Jun 9 10:15:11 2015 -0700 , don't abort()
+M	src/msvc_helper-win32.cc
+1493c6a ,Scott Graham,  Mon Jun 8 17:17:55 2015 -0700 , push error to caller and abort on failure
+M	src/includes_normalize-win32.cc
+M	src/includes_normalize.h
+M	src/includes_normalize_test.cc
+M	src/msvc_helper-win32.cc
+a2d1cf2 ,Scott Graham,  Mon Jun 8 13:21:55 2015 -0700 , Fix crash in attempting to canonicalize paths longer than _MAX_PATH
+M	src/includes_normalize-win32.cc
+M	src/includes_normalize_test.cc
+681f761 ,Jason Haslam,  Tue May 26 16:47:18 2015 -0600 , Search for generated headers relative to build dir.
+M	configure.py
+M	src/browse.cc
+78b1e52 ,Jason Haslam,  Tue May 26 15:19:28 2015 -0600 , Allow configure script to bootstrap out of source.
+M	configure.py
+1d5d088 ,Nico Weber,  Thu May 14 17:37:50 2015 -0700 , Add a missing EXPLAIN() call.
+M	src/graph.cc
+f0f36ad ,Nico Weber,  Sat May 2 14:38:43 2015 -0700 , Fix typo in comment.
+M	src/edit_distance.cc
+bf2f4b7 ,Scott Graham,  Mon Apr 27 11:12:45 2015 -0700 , simplify & inline
+M	src/build.cc
+M	src/build.h
+4c4887d ,Scott Graham,  Fri Apr 24 16:06:55 2015 -0700 , avoid calling ResumeDelayedJobs instead
+M	src/build.cc
+M	src/build.h
+M	src/state.h
+dcdd042 ,Scott Graham,  Fri Apr 24 14:25:22 2015 -0700 , add comment
+M	src/state.h
+9fff955 ,Nicolas Despres,  Fri Apr 24 17:42:59 2015 +0200 , Forward interruption signal to child processes.
+M	src/subprocess-posix.cc
+M	src/subprocess.h
+b4bc5cf ,Nicolas Despres,  Fri Apr 24 16:40:03 2015 +0200 , Allow SIGTERM for interruption.
+M	src/subprocess-posix.cc
+M	src/subprocess.h
+M	src/subprocess_test.cc
+6652258 ,Scott Graham,  Thu Apr 23 15:56:09 2015 -0700 , Fix pool use count going unbalanced
+M	src/build.cc
+M	src/build_test.cc
+M	src/state.h
